@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+    background-color: #0a0c10;
+}
+
+.background {
+    position: fixed;
+    inset: 0;
+    z-index: -1;
+}
+
+.background video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.background-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(10, 12, 16, 0.5);
+    z-index: -1;
+}
+
+.background::after{
+    content: '';
+    width: inherit;
+    height: inherit;
+    position: fixed;
+    inset: 0;
+    background: linear-gradient(109deg, rgba(10, 12, 16, 0.99) 15%, rgba(10, 12, 16, 0.7) 50%, rgba(10, 12, 16, 0.99) 85%);
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 50px;
+    gap: 20px;
+    text-align: justify;
+}
+
+.textos {
+    max-width: 800px;   
+}
+
+.textos #cup {
+    width: 400px;
+    margin-bottom: -35px;
+    margin-left: 100px;
+}
+
+.text > p{
+    color: #fff;
+    margin-right: 100px;
+    font-size: 200px;
+}
+
+.textos .title {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.textos .text {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 30px;
+}
+
+.botoes {
+    display: flex;
+    gap: 10px;
+}
+
+.button-compre, .button-saiba {
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.5s;
+    width: 200px;
+    height: 50px;
+    font-size: 20px;
+    font-family: 'Poppins';
+}
+
+.button-compre {
+    background-color: red;
+    color: #fff;
+}
+
+.button-saiba {
+    background: transparent;
+    color: #fff;
+    border: 1px solid yellow;
+}
+
+.button-compre:hover, .button-saiba:hover {
+    transform: translateY(-10px);
+    border: 1px solid yellow;
+}
+
+.imagem #imga {
+    width: 700px;
+    height: auto;
+    margin-right: -3    0px;
+    margin-top: -100px;
+}
+
+.personagens {
+    text-align: center;
+    padding: 50px 0;
+    margin-top: 20px;
+}
+
+.personagens .tituloh1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.herois {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.hero-item {
+    background-color: #222;
+    padding: 20px;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+.hero-item:hover {
+    transform: translateY(-10px);
+    border: 2px solid yellow;
+}
+
+.hero-img {
+    width: 400px;
+    height: 500px;
+    display: block;
+    margin: 0 auto;
+    
+}
+
+.hero-item img[alt="Chalice"] {
+    width: 500px;
+    height: 500px;
+    object-fit: cover;
+}
+
+.carousel {
+    padding: 50px 0;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+.carousel .chefe {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.dlc-section {
+    position: relative;
+    background: url('../../assests_copy/logo_dlc.png') center/cover no-repeat;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dlc-section::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.dlc-section > * {
+    position: relative;
+    z-index: 2;
+}

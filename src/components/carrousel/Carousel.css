@@ -1,0 +1,56 @@
+.carousel-container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    position: relative;
+}
+
+.carousel-image {
+    width: 90%; /* Reduzir o tamanho das imagens */
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;
+    margin: 0 auto;
+}
+
+.slick-prev,
+.slick-next {
+    font-size: 20px; /* Reduzir tamanho das setas */
+    width: 30px;
+    height: 30px;
+    color: #fff;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+    z-index: 10;
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease;
+}
+
+.slick-prev:hover,
+.slick-next:hover {
+    background: rgba(255, 0, 0, 0.8);
+}
+
+.slick-prev {
+    left: -15px; /* Posicionar seta à esquerda */
+}
+
+.slick-next {
+    right: -15px; /* Posicionar seta à direita */
+}
+
+/* Posição dos pontos de navegação (dots) */
+.slick-dots {
+    bottom: -20px;
+}
+
+.slick-dots li button:before {
+    font-size: 10px; /* Diminuir tamanho dos dots */
+    color: #fff;
+}
+
+.slick-dots li.slick-active button:before {
+    color: red; /* Cor do dot ativo */
+}
